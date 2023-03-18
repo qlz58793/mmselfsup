@@ -25,8 +25,8 @@ param_scheduler = [
         # start_factor=1e-6 / 2e-4,
         start_factor=0.01,
         by_epoch=True,
-        begin=100,
-        end=105,
+        begin=0,
+        end=5,
         convert_to_iter_based=True),
     dict(
         type='CosineAnnealingLR',
@@ -34,13 +34,13 @@ param_scheduler = [
         # eta_min=1e-5 * 2048 / 512,
         eta_min=1e-5,
         by_epoch=True,
-        begin=105,
-        end=120,
+        begin=5,
+        end=20,
         convert_to_iter_based=True)
 ]
 
 # schedule
-train_cfg = dict(max_epochs=120)
+train_cfg = dict(max_epochs=20)
 
 # runtime
 default_hooks = dict(logger=dict(type='LoggerHook', interval=100))
