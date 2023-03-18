@@ -7,7 +7,6 @@ _base_ = [
 
 # dataset 8 x 512
 train_dataloader = dict(batch_size=512, num_workers=8)
-# train_dataloader = dict(batch_size=128, num_workers=8)
 
 # optimizer wrapper
 optimizer = dict(

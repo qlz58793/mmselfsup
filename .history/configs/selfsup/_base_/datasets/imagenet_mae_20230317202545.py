@@ -1,7 +1,6 @@
 # dataset settings
 dataset_type = 'mmcls.ImageNet'
-# data_root = 'data/imagenet/'
-data_root = '/data1/datasets/imagenet_fold/'
+data_root = 'data/imagenet/'
 file_client_args = dict(backend='disk')
 
 train_pipeline = [
