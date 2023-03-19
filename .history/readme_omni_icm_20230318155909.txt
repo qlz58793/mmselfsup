@@ -3,4 +3,4 @@
 https://mmselfsup.readthedocs.io/en/dev-1.x/get_started.html
 
 2. Install the compression toolbox by following instructions.
-pip install compression.zip
+
